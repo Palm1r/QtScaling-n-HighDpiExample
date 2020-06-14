@@ -14,8 +14,13 @@ Window {
         color: "green"
 
         Text {
-            id: name
-            text: qsTr("example")
+            anchors.centerIn: parent
+            text: "text size:" + width + "x" + height
+            font.pointSize: 12
+        }
+
+        Text {
+            text: parent.width + "x" + parent.height
         }
     }
 }
